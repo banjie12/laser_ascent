@@ -1,0 +1,41 @@
+@property --animation-distance {
+    syntax: '<percentage>';
+    inherits: true;
+    initial-value: 0%;
+}
+body {
+    margin: 0px;
+    min-height: 100vh;
+    background: linear-gradient(to right, blue 0% var(--animation-distance), red calc(100% - var(--animation-distance)) 100%);
+    animation: colorSlide 3s infinite alternate ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes colorSlide {
+    from {
+        --animation-distance: 0%;
+    }
+    to {
+        --animation-distance: 50%;
+    }
+}
+a {
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+}
+a+a {
+    padding-left: 20px;
+    border-left: 1px solid white;
+}
+a:not(:last-child) {
+    padding-right: 20px;
+}
+a:hover {
+    text-decoration: underline;
+}
+nav {
+    flex-direction: row;
+}
