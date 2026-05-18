@@ -1,3 +1,2 @@
 //Run other scripts
-import 'gameControl.js';
-alert();
+import './gameControl.js';
