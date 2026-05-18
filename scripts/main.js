@@ -1,2 +1,2 @@
 //Run other scripts
-import 'gameControl.js';
+import "gameControl.js";
