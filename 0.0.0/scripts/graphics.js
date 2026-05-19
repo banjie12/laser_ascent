@@ -60,3 +60,9 @@ let graphics = {
         this.scale = this.canvas.width / this.worldWidth; 
     }
 };
+
+//Call resize
+graphics.resize();
+
+//Set resize to run if you resize the window
+window.addEventListener("resize", graphics.resize.bind(graphics));
