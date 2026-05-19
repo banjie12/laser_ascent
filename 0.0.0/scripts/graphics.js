@@ -58,6 +58,20 @@ let graphics = {
 
         //Change the scale
         this.scale = this.canvas.width / this.worldWidth; 
+    },
+
+    //---Fill rect function---
+    fillRect: function(x, y, width, height, colour) {
+        //Set colour
+        this.ctx.fillStyle = colour;
+
+        //Calculate pixel coordinates from world coordinates
+        this.ctx.fillRect(
+            x * this.scale,
+            y * this.scale,
+            width * this.scale,
+            height * this.scale
+        );
     }
 };
 
@@ -66,3 +80,4 @@ graphics.resize();
 
 //Set resize to run if you resize the window
 window.addEventListener("resize", graphics.resize.bind(graphics));
+graphics.fillRect(50, 50, 50, 50, "red");
