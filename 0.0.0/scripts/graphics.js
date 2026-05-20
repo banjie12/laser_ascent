@@ -23,6 +23,7 @@ let graphics = {
         this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
 
         //Call all draw functions
+        graphics.fillRect(50, 50, 50, 50, "red");
     },
 
     //Scale property to be able to fit any screen
@@ -80,4 +81,3 @@ graphics.resize();
 
 //Set resize to run if you resize the window
 window.addEventListener("resize", graphics.resize.bind(graphics));
-graphics.fillRect(50, 50, 50, 50, "red");
