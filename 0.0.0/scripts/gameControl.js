@@ -1,3 +1,7 @@
+//Imports
+import { graphics } from "./graphics.js";
+import { player } from "./player.js";
+
 /*
 ============================
 ============================
@@ -8,7 +12,7 @@
 */
 
 //-------Game control object-------
-let gameControl = {
+export const gameControl = {
     //---Last time and delta time properties to make it run for any fps---
 
     //Last time property set to currrent time

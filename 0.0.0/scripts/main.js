@@ -1,3 +1,3 @@
-//Run other scripts
-import './graphics.js';
-import './gameControl.js';
+//Import scripts
+import { gameControl } from "./gameControl.js";
+gameControl.tick();

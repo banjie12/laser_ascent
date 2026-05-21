@@ -1,3 +1,6 @@
+//Imports
+import { player } from "./player.js";
+
 /*
 ========================================
 ========================================
@@ -8,7 +11,7 @@
 */
 
 //-------Graphics object-------
-let graphics = {
+export const graphics = {
     //---Canvas and ctx properties to be able to draw to the canvas and resize it---
 
     //Canvas property to be able to resize the canvas
